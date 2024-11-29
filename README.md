@@ -71,6 +71,9 @@ Before using docker-compose.yml :
 
       mkdir -P ./config/radius
       touch ./config/radius/users
+
+      mkdir -P ./configs/mysql/
+      touch ./configs/mysql/radius.sql
       
 ```bash
 docker-compose -f docker-compose.yml up -d
