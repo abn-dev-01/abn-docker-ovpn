@@ -66,7 +66,12 @@ docker run -itd \
   2stacks/docker-ovpn
 ```
 
-## Run using Docker Compose (can be used to launch freeradius and mysql)
+## Run using Docker Compose (can be used to launch freeradius and MySQL)
+Before using docker-compose.yml : 
+
+      mkdir -P ./config/radius
+      touch ./config/radius/users
+      
 ```bash
 docker-compose -f docker-compose.yml up -d
 ```
